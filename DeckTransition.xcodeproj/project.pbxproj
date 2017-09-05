@@ -14,8 +14,9 @@
 		B6987C051F5D9FC80049B27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6987C031F5D9FC80049B27F /* LaunchScreen.storyboard */; };
 		B6987C0D1F5DA0460049B27F /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C0C1F5DA0460049B27F /* ModalViewController.swift */; };
 		B6987C0F1F5DB8590049B27F /* DeckTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C0E1F5DB8590049B27F /* DeckTransitioningDelegate.swift */; };
-		B6987C111F5DB91D0049B27F /* DeckPresentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C101F5DB91D0049B27F /* DeckPresentedAnimator.swift */; };
+		B6987C111F5DB91D0049B27F /* DeckPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C101F5DB91D0049B27F /* DeckPresentingAnimator.swift */; };
 		B6987C131F5E77810049B27F /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C121F5E77810049B27F /* RoundedView.swift */; };
+		B6987C151F5EF72B0049B27F /* DeckDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C141F5EF72B0049B27F /* DeckDismissingAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		B6987C061F5D9FC80049B27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6987C0C1F5DA0460049B27F /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		B6987C0E1F5DB8590049B27F /* DeckTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckTransitioningDelegate.swift; sourceTree = "<group>"; };
-		B6987C101F5DB91D0049B27F /* DeckPresentedAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPresentedAnimator.swift; sourceTree = "<group>"; };
+		B6987C101F5DB91D0049B27F /* DeckPresentingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPresentingAnimator.swift; sourceTree = "<group>"; };
 		B6987C121F5E77810049B27F /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		B6987C141F5EF72B0049B27F /* DeckDismissingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDismissingAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,8 @@
 				B6987C031F5D9FC80049B27F /* LaunchScreen.storyboard */,
 				B6987C061F5D9FC80049B27F /* Info.plist */,
 				B6987C0E1F5DB8590049B27F /* DeckTransitioningDelegate.swift */,
-				B6987C101F5DB91D0049B27F /* DeckPresentedAnimator.swift */,
+				B6987C101F5DB91D0049B27F /* DeckPresentingAnimator.swift */,
+				B6987C141F5EF72B0049B27F /* DeckDismissingAnimator.swift */,
 				B6987C121F5E77810049B27F /* RoundedView.swift */,
 			);
 			path = DeckTransition;
@@ -149,9 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6987BFD1F5D9FC80049B27F /* ViewController.swift in Sources */,
-				B6987C111F5DB91D0049B27F /* DeckPresentedAnimator.swift in Sources */,
+				B6987C111F5DB91D0049B27F /* DeckPresentingAnimator.swift in Sources */,
 				B6987C131F5E77810049B27F /* RoundedView.swift in Sources */,
 				B6987C0F1F5DB8590049B27F /* DeckTransitioningDelegate.swift in Sources */,
+				B6987C151F5EF72B0049B27F /* DeckDismissingAnimator.swift in Sources */,
 				B6987C0D1F5DA0460049B27F /* ModalViewController.swift in Sources */,
 				B6987BFB1F5D9FC80049B27F /* AppDelegate.swift in Sources */,
 			);

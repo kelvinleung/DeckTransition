@@ -11,7 +11,11 @@ import UIKit
 class DeckTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return DeckPresentedAnimator()
+        return DeckPresentingAnimator()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DeckDismissingAnimator()
     }
     
 }

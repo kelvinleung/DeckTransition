@@ -9,23 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let modalVC = ModalViewController()
+    let transitionDelegate = DeckTransitioningDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange
         
-        let testView = RoundedView(frame: view.bounds)
-        view.addSubview(testView)
+        modalVC.transitioningDelegate = transitionDelegate
+        modalVC.modalPresentationStyle = .custom
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.viewWasTapped))
         view.addGestureRecognizer(tap)
     }
     
     @objc func viewWasTapped() {
-        let modal = ModalViewController()
-        let transitionDelegate = DeckTransitioningDelegate()
-        modal.transitioningDelegate = transitionDelegate
-        present(modal, animated: true, completion: nil)
+        present(modalVC, animated: true, completion: nil)
     }
 
 }

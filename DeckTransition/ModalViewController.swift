@@ -13,6 +13,13 @@ class ModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(viewWasTapped))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func viewWasTapped() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

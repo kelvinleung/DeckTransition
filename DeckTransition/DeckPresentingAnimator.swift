@@ -1,5 +1,5 @@
 //
-//  DeckPresentedAnimator.swift
+//  DeckPresentingAnimator.swift
 //  DeckTransition
 //
 //  Created by Kelvin Leung on 05/09/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DeckPresentedAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+class DeckPresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
@@ -33,9 +33,9 @@ class DeckPresentedAnimator: NSObject, UIViewControllerAnimatedTransitioning {
                 presentingVC.view.transform = CGAffineTransform(scaleX: scale, y: scale)
                 presentingVC.view.alpha = 0.8
                 presentedVC.view.frame = finalFrameForPresentedView
-        }, completion: { completed in
+        }) { completed in
             transitionContext.completeTransition(completed)
-        })
+        }
     }
     
 }

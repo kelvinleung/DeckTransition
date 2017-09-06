@@ -17,6 +17,7 @@
 		B6987C111F5DB91D0049B27F /* DeckPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C101F5DB91D0049B27F /* DeckPresentingAnimator.swift */; };
 		B6987C131F5E77810049B27F /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C121F5E77810049B27F /* RoundedView.swift */; };
 		B6987C151F5EF72B0049B27F /* DeckDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C141F5EF72B0049B27F /* DeckDismissingAnimator.swift */; };
+		B6987C1D1F603D870049B27F /* DeckPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6987C1C1F603D870049B27F /* DeckPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B6987C101F5DB91D0049B27F /* DeckPresentingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPresentingAnimator.swift; sourceTree = "<group>"; };
 		B6987C121F5E77810049B27F /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		B6987C141F5EF72B0049B27F /* DeckDismissingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDismissingAnimator.swift; sourceTree = "<group>"; };
+		B6987C1C1F603D870049B27F /* DeckPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				B6987C0E1F5DB8590049B27F /* DeckTransitioningDelegate.swift */,
 				B6987C101F5DB91D0049B27F /* DeckPresentingAnimator.swift */,
 				B6987C141F5EF72B0049B27F /* DeckDismissingAnimator.swift */,
+				B6987C1C1F603D870049B27F /* DeckPresentationController.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				B6987C111F5DB91D0049B27F /* DeckPresentingAnimator.swift in Sources */,
 				B6987C131F5E77810049B27F /* RoundedView.swift in Sources */,
 				B6987C0F1F5DB8590049B27F /* DeckTransitioningDelegate.swift in Sources */,
+				B6987C1D1F603D870049B27F /* DeckPresentationController.swift in Sources */,
 				B6987C151F5EF72B0049B27F /* DeckDismissingAnimator.swift in Sources */,
 				B6987C0D1F5DA0460049B27F /* ModalViewController.swift in Sources */,
 				B6987BFB1F5D9FC80049B27F /* AppDelegate.swift in Sources */,

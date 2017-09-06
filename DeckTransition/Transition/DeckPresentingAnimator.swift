@@ -11,14 +11,14 @@ import UIKit
 class DeckPresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return 0.3
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         guard let presentingVC = transitionContext.viewController(forKey: .from) else { return }
         guard let presentedVC = transitionContext.viewController(forKey: .to) else { return }
         let containerView = transitionContext.containerView
-        let scale: CGFloat = 0.9
+        let scale: CGFloat = 0.95
         
         containerView.addSubview(presentedVC.view)
         presentedVC.view.frame = CGRect(x: 0, y: containerView.bounds.height, width: containerView.bounds.width, height: containerView.bounds.height)

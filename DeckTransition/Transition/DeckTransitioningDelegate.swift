@@ -18,4 +18,8 @@ class DeckTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate
         return DeckDismissingAnimator()
     }
     
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return DeckPresentationController(presentedViewController: presented, presenting: presenting)
+    }
+    
 }

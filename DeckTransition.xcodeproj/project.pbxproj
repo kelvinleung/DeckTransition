@@ -64,19 +64,35 @@
 		B6987BF91F5D9FC80049B27F /* DeckTransition */ = {
 			isa = PBXGroup;
 			children = (
-				B6987BFA1F5D9FC80049B27F /* AppDelegate.swift */,
+				B6987C171F60391D0049B27F /* Transition */,
 				B6987BFC1F5D9FC80049B27F /* ViewController.swift */,
 				B6987C0C1F5DA0460049B27F /* ModalViewController.swift */,
-				B6987BFE1F5D9FC80049B27F /* Main.storyboard */,
-				B6987C011F5D9FC80049B27F /* Assets.xcassets */,
-				B6987C031F5D9FC80049B27F /* LaunchScreen.storyboard */,
+				B6987C121F5E77810049B27F /* RoundedView.swift */,
+				B6987C161F6038DB0049B27F /* Supporting Files */,
 				B6987C061F5D9FC80049B27F /* Info.plist */,
+				B6987C011F5D9FC80049B27F /* Assets.xcassets */,
+			);
+			path = DeckTransition;
+			sourceTree = "<group>";
+		};
+		B6987C161F6038DB0049B27F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6987BFA1F5D9FC80049B27F /* AppDelegate.swift */,
+				B6987BFE1F5D9FC80049B27F /* Main.storyboard */,
+				B6987C031F5D9FC80049B27F /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6987C171F60391D0049B27F /* Transition */ = {
+			isa = PBXGroup;
+			children = (
 				B6987C0E1F5DB8590049B27F /* DeckTransitioningDelegate.swift */,
 				B6987C101F5DB91D0049B27F /* DeckPresentingAnimator.swift */,
 				B6987C141F5EF72B0049B27F /* DeckDismissingAnimator.swift */,
-				B6987C121F5E77810049B27F /* RoundedView.swift */,
 			);
-			path = DeckTransition;
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -282,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

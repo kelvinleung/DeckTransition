@@ -11,7 +11,7 @@ import UIKit
 class DeckPresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.3
+        return Constants.defaultAnimationDuration
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

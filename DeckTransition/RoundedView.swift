@@ -10,8 +10,6 @@ import UIKit
 
 class RoundedView: UIView {
     
-    var cornerRadius: CGFloat = 8
-    
     private let maskLayer = CAShapeLayer()
     
     private func setup() {
@@ -39,7 +37,7 @@ class RoundedView: UIView {
     
     private func updateMaskPath() {
         let newRect = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: bounds.width, height: bounds.height)
-        let radii = CGSize(width: cornerRadius, height: cornerRadius)
+        let radii = CGSize(width: Constants.cornerRadius, height: Constants.cornerRadius)
         let boundsPath = UIBezierPath(rect: newRect)
         boundsPath.append(UIBezierPath(roundedRect: newRect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: radii))
         maskLayer.path = boundsPath.cgPath
